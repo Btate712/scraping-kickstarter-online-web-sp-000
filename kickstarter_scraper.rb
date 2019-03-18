@@ -1,5 +1,5 @@
-require nokogiri
-
+require 'nokogiri'
+require 'pry'
 def create_project_hash
   html = File.read('fixtures/kickstarter.html')
 
@@ -7,3 +7,4 @@ def create_project_hash
 end
 
 create_project_hash
+binding.pry
